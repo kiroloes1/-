@@ -1,0 +1,154 @@
+
+header{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+header h1{
+    display: flex;
+    justify-content: center;
+    color:#ac4034;
+    font-family: 'Cairo'
+}
+header img{
+    border-radius: 2vw;
+   
+    display: flex;
+    justify-content: center;
+    animation: appear 0.5s ease;
+}
+@keyframes appear {
+    0%{
+        width: 0%;
+    }
+    25%{
+        width: 25%;
+    }
+    50%
+    {
+        width: 50%;
+    }
+    75%{
+        width: 75%;
+    }
+    100%{
+      width: 100%;
+    }
+}
+header div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap ;
+    justify-items: center;
+}
+p{
+    display: flex;
+     font-family: 'Cairo';
+     margin-bottom: 15vh;
+     font-size: medium;
+     direction: rtl;
+     justify-content: center;
+     
+}
+h1{
+    display: flex;
+    justify-content: center;
+    font-family: 'Cairo';
+    color:#ac4034;
+   
+}
+.baker{
+    display: flex;
+    justify-content: center;
+   
+} 
+.baker a{
+    width: 70%;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    height: 20vh;
+    border-radius: 1vh;
+    box-shadow: 25px 25px 45px -45px #ac4034 ;
+    text-decoration: none;
+    direction: rtl;
+    margin: 4vh;
+    transition: 0.5s ease;
+}
+.baker a:hover{
+   
+    transform: scale(1.1);
+}
+.baker h1:hover{
+    color: rgb(20, 153, 109);
+}
+.baker h1{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    padding: 2vh;
+    margin: 0;
+
+    
+}
+
+
+
+@media (min-width:200px){
+   header img{
+width:80%;
+display: flex;
+
+align-self: center;
+   }
+}
+@media (min-width:800px){
+  
+   
+           header p{
+            font-size: larger;
+           }
+           main{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+           }
+    .baker{
+            display: flex;
+            flex-direction:row;
+            width: 50%;
+           
+        }
+        .baker a{
+            border-radius: 0vh 8vh ;
+        }
+        @keyframes appear {
+            0%{
+                width: 0%;
+            }
+            100%{
+              width: 40%;
+            }
+        }
+        }
+ @media (min-width:1000px){
+            header img{
+                width:40%;
+           
+                   }
+                   .baker{
+                    display: flex;
+                    flex-direction:row;
+                    width: 30%;
+                }
+
+                }
+        
